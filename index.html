@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculatrice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+	<style type="text/css">
+		div {
+			text-align: center;
+			font-size: 100px;
+			
+		}
+		#resultat{
+			height: 150px;
+			background-color: black;
+			border: 1px solid;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			text-align: right;
+			color: white;
+		}
+		#operateur div{
+			border: 1px solid grey;
+			background-color: #a8a2a1;
+		}
+		#pave div div{
+			border: 1px solid grey;
+		}
+		#egale{
+			background-color: red;
+			border: 1px solid grey;
+		}
+
+		#operateur div:active, #pave div div:active{
+			background-color: #cecccc;
+		}
+		#egale:active{
+			background-color: #f45342;
+		}
+		span{
+			line-height: 576px;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div id="calculatrice" class="container well">
+
+		<div class="row ">
+			<div id="resultat" class="col-xs-12"></div>
+		</div>
+
+		<div class="row " id="operateur">
+			<div class="ope col-xs-3">+</div>
+			<div class="ope col-xs-3">-</div>
+			<div class="ope col-xs-3">x</div>
+			<div class="ope col-xs-3">/</div>
+		</div>
+
+		<div class="row">
+
+			
+
+			<div id="pave" class="col-xs-9">
+				<div class="row">
+					<div class="num col-xs-4">7</div>
+					<div class="num col-xs-4">8</div>
+					<div class="num col-xs-4">9</div>
+				</div>
+				<div class="row">
+					<div class="num col-xs-4">4</div>
+					<div class="num col-xs-4">5</div>
+					<div class="num col-xs-4">6</div>
+				</div>
+				<div class="row">
+					<div class="num col-xs-4">1</div>
+					<div class="num col-xs-4">2</div>
+					<div class="num col-xs-4">3</div>
+				</div>
+				<div class="row">
+					<div class="num col-xs-4">0</div>
+					<div class="virg col-xs-4">.</div>
+					<div class="col-xs-4" id="suppr">C</div>
+				</div>
+			</div>
+
+			<div id="egale" class="col-xs-3">
+				<span>=</span>
+			</div>
+
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
